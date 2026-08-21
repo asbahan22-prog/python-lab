@@ -1,5 +1,4 @@
-cat > src/main.py <<'EOF'
-from utils import square, is_even, celsius_to_fahrenheit
+from utils import square, is_even, celsius_to_fahrenheit, greet
 
 number = float(input("Enter a number: "))
 
@@ -11,4 +10,6 @@ else:
     print("The number is odd.")
 
 print("Fahrenheit equivalent:", celsius_to_fahrenheit(number))
-EOF
+
+name = input("Enter your name: ")
+print(greet(name))

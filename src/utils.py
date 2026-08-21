@@ -1,4 +1,3 @@
-cat > src/utils.py <<'EOF'
 def square(n):
     return n * n
 
@@ -9,4 +8,7 @@ def is_even(n):
 
 def celsius_to_fahrenheit(c):
     return (c * 9 / 5) + 32
-EOF
+
+
+def greet(name):
+    return f"Hello, {name}! Welcome to Python Lab."
